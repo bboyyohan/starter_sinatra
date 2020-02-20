@@ -7,11 +7,22 @@
 
 </form>
 
-
-
 <form action="/owners/<%= @owner.id %>" method="POST">
 
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete Owner">
 
 </form>
+
+
+
+
+<form action='/join' method="POST">
+
+    <label for="added_dog">Dog Name:</label>
+    <input type="text" name="added_dog">
+    <input type="text" name="owner_id" value=<%= @owner.id %>>
+    <input type="submit">
+
+</form>
+
