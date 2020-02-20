@@ -1,3 +1,6 @@
 require_relative './config/environment'
 
-run ApplicationController
+use Rack::MethodOverride
+use OwnersController
+use OwnerDogsController
+run DogsController

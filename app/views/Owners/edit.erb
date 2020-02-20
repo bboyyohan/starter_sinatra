@@ -1,0 +1,17 @@
+<form action='/owners/<%= @owner.id %>' method="POST">
+
+    <input type="hidden" name="_method" value="PATCH">
+    <label for="new_owner_name">New Owner Name:</label>
+    <input type="text" name="new_owner_name">
+    <input type="submit">
+
+</form>
+
+
+
+<form action="/owners/<%= @owner.id %>" method="POST">
+
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete Owner">
+
+</form>
