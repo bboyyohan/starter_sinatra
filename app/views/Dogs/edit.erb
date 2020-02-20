@@ -1,0 +1,17 @@
+<form action='/dogs/<%= @dog.id %>' method="POST">
+
+    <input type="hidden" name="_method" value="PATCH">
+    <label for="new_dog_name">New Dog Name:</label>
+    <input type="text" name="new_dog_name">
+    <input type="submit">
+
+</form>
+
+
+
+<form action="/dogs/<%= @dog.id %>" method="POST">
+
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete dog">
+
+</form>

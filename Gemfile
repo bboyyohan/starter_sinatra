@@ -9,4 +9,5 @@ gem 'require_all'
 gem 'rack'
 gem 'shotgun'
 gem 'sinatra'
+gem 'faker'
 
